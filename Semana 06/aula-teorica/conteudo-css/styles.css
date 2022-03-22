@@ -1,0 +1,47 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: blueviolet;
+}
+
+#fundo-azul {
+  background-color: blue;
+}
+
+.div-body {
+  background-color: black;
+  padding: 25px;
+  width: 500px;
+  height: 750px;
+}
+.div-body2 {
+  background-color: aqua;
+  padding: 25px;
+  width: 500px;
+  height: 750px;
+}
+
+div h1 {
+  color: cadetblue;
+}

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.button {
+  border: none;
+  padding: 10px 5px;
+  background-color: aquamarine;
+}
+
+.button:hover {
+  background-color: aqua;
+}
+
+.list {
+  background-color: burlywood;
+  padding: 10px;
+  margin: 10px;
+}
+
+.list:empty {
+  display: none;
+}
+
+/* .list-item:first-child {
+  background-color: blueviolet;
+} */
+
+/* .list-item:last-child {
+  background-color: blueviolet;
+} */
+
+/* .list-item:nth-child(1) {
+  background-color: blueviolet;
+  font-size: 50px;
+} */
+
+.list-item:nth-child(2n) {
+  background-color: blueviolet;
+  font-size: 50px;
+}
+
+.new-button {
+  background-color: red;
+}
+
+.new-button:hover {
+  background-color: blue;
+}

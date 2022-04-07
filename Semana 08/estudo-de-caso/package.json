@@ -1,0 +1,20 @@
+{
+  "name": "estudo-de-caso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "parcel": "2.4.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
 import Card from "./components/Card/Card";
+import ExemploUseEffect from "./components/ExemploUseEffect/ExemploUseEffect";
+import RequestUseEffect from "./components/RequestUseEffect/RequestUseEffect";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -11,11 +11,14 @@ function App() {
 
   return (
     <div>
-      <Card title="Título 1" description="Desc 1" />
+      {/* <Card title="Título 1" description="Desc 1" />
       <Card title="Título 2" description="Desc 2" />
       <Card title="Título 3" description="Desc 3" />
       <Card title="Título 4" description="Desc 4" />
-      <Card title="Título 5" description="Desc 5" />
+      <Card title="Título 5" description="Desc 5" /> */}
+
+      <ExemploUseEffect value="18" valueTwo="8" />
+      <RequestUseEffect />
 
       {/* <p>{count}</p>
       <button

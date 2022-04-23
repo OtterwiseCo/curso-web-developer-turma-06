@@ -2,6 +2,9 @@ import "./App.css";
 import Card from "./components/Card/Card";
 import ExemploUseEffect from "./components/ExemploUseEffect/ExemploUseEffect";
 import RequestUseEffect from "./components/RequestUseEffect/RequestUseEffect";
+import RequestEffectState from "./components/RequestEffectState/RequestEffectState";
+import OnChange from "./components/OnChange/OnChange";
+import ExemploUseReducer from "./components/ExemploUseReducer/ExemploUseReducer";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -17,8 +20,11 @@ function App() {
       <Card title="Título 4" description="Desc 4" />
       <Card title="Título 5" description="Desc 5" /> */}
 
-      <ExemploUseEffect value="18" valueTwo="8" />
-      <RequestUseEffect />
+      {/* <ExemploUseEffect value="18" valueTwo="8" /> */}
+      {/* <RequestUseEffect id="10" />
+      <RequestEffectState /> */}
+      {/* <OnChange /> */}
+      <ExemploUseReducer />
 
       {/* <p>{count}</p>
       <button

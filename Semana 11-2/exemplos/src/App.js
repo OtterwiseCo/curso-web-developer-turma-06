@@ -19,6 +19,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/posts" element={<Posts />} />
+      <Route path="/posts/:id" element={<Posts />} />
+      <Route path="*" element={<p>Rota não encontrada. 404</p>} />
     </Routes>
   );
 }

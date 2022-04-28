@@ -1,5 +1,5 @@
 import client from "../providers/client";
 
-export const listAllPosts = () => client.get("/posts");
+export const listAllPosts = (params) => client.get("/posts", { params });
 
 export const getPost = (id) => client.get(`/posts/${id}`);

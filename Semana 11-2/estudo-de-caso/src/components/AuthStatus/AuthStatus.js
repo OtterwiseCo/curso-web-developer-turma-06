@@ -1,8 +1,10 @@
 import React from "react";
 import { useAuth } from "../../context/auth-context";
+import { useNavigate } from "react-router-dom";
 
 const AuthStatus = () => {
   const auth = useAuth();
+  const navigate = useNavigate();
   console.log(auth);
 
   if (!auth.user) {
@@ -10,7 +12,14 @@ const AuthStatus = () => {
   }
   return (
     <p>
-      Bem vindo {auth.user.name}! <button>Sair</button>
+      Bem vindo {auth.user.name}!{" "}
+      <button
+        onClick={() => {
+          auth.logout(() => navigate("/"));
+        }}
+      >
+        Sair
+      </button>
     </p>
   );
 };

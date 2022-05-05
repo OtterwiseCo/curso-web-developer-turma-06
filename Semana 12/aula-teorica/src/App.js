@@ -3,8 +3,9 @@ import { login } from "./services/auth";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "./App.css";
+import { Button, Input, Stack, Flex, Text } from "@chakra-ui/react";
 
-import { Button } from "./components/Button";
+//import { Button } from "./components/Button";
 
 function App() {
   const schema = yup
@@ -38,16 +39,35 @@ function App() {
   console.log(errors);
 
   return (
-    <form onSubmit={handleSubmit(funcao)}>
-      <input type="email" placeholder="E-mail" {...register("email")} />
-      {errors.email && <span>{errors.email.message}</span>}
+    <Flex
+      as="form"
+      mt="20px"
+      justifyContent="center"
+      onSubmit={handleSubmit(funcao)}
+    >
+      <Stack spacing={4} w={["100%", "75%", "50%"]}>
+        <Text textAlign="center" fontSize="20px">
+          Meu Formulário
+        </Text>
+        <Input type="email" placeholder="E-mail" {...register("email")} />
+        {errors.email && <span>{errors.email.message}</span>}
 
-      <input type="password" {...register("password")} />
-      {errors.password && <span>{errors.password.message}</span>}
+        <Input type="password" {...register("password")} />
+        {errors.password && <span>{errors.password.message}</span>}
 
-      <button type="submit">Enviar</button>
-      <Button disabled>Botão</Button>
-    </form>
+        <Button
+          _hover={{
+            background: "black",
+            color: "teal.500",
+          }}
+          colorScheme="blue"
+          type="submit"
+        >
+          Enviar
+        </Button>
+        {/* <Button disabled>Botão</Button> */}
+      </Stack>
+    </Flex>
   );
 }
 

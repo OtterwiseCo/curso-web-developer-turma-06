@@ -1,18 +1,14 @@
-// ESM
-import Fastify from "fastify";
-const fastify = Fastify({
-  logger: true,
-});
+import server from "./config/server.js";
 
-fastify.get("/", async (request, reply) => {
-  reply.send({ posts: [] });
-});
+// server.get("/", async (request, reply) => {
+//   reply.send({ posts: [] });
+// });
 
 const start = async () => {
   try {
-    await fastify.listen(3000);
+    await server.listen(3000);
   } catch (err) {
-    fastify.log.error(err);
+    server.log.error(err);
     process.exit(1);
   }
 };

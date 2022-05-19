@@ -11,12 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^3.13.0",
+    "@prisma/client": "^3.14.0",
+    "bcrypt": "^5.0.1",
     "fastify": "^3.29.0",
-    "nodemon": "^2.0.16",
-    "prisma": "^3.13.0"
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.16"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
+  },
+  "devDependencies": {
+    "prisma": "^3.14.0"
   }
 }
